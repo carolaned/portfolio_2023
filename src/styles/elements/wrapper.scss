@@ -1,0 +1,13 @@
+/* ==========================================================================
+   WRAPPER / ELEMENT
+   ========================================================================== */
+
+.wrapper {
+    max-width: 1450px;
+    width: calc(100% - var(--spacing-xl));
+    margin: 0 auto;
+
+    @media screen and (max-width: $breakpoint-xs) {
+        width: calc(100% - var(--spacing-xs));
+    }
+}
