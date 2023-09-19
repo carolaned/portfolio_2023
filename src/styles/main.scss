@@ -1,5 +1,5 @@
 //FONTS
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Nunito+Sans:wght@200;300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rufina&family=Signika:wght@300;400;600;700&display=swap');
 
 // TOOLS
 // mixins et fonctions utilisés globalement dans le SCSS (Sass)
@@ -26,8 +26,9 @@
 
 // COMPONENTS
 // Composants d'interface utilisateur spécifiques.
-// C’est là que la majorité de notre travail a lieu.
-//@import 'components/carousel';
+@import 'components/header';
+@import 'components/accueil';
+@import 'components/propos';
 
 // UTILITIES
 // Utilitaires et classes auxiliaires avec possibilité de remplacer tout ce qui précède, par exemple masquer les éléments de la page

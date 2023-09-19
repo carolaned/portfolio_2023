@@ -1,0 +1,63 @@
+/* ==========================================================================
+   ACCUEIL
+   ========================================================================== */
+.accueil {
+    section {
+        &::before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            content: '';
+            width: 65%;
+            height: 84%;
+            border-right: var(--color-primary) 1px solid;
+            border-bottom: var(--color-primary) 1px solid;
+        }
+    }
+    .wrapper {
+        position: relative;
+        height: 85vh;
+
+        &::after {
+            position: absolute;
+            bottom: 250px;
+            right: 0;
+            content: '';
+            width: 260px;
+            height: 175px;
+            background-color: rgba($color: #fff, $alpha: 0.2);
+            box-shadow: -30px 30px 30px 0 rgba($color: #000, $alpha: 0.25);
+            backdrop-filter: blur(5.5px);
+        }
+    }
+    .cube {
+        position: absolute;
+        bottom: 0;
+        right: 150px;
+        content: '';
+        width: 415px;
+        height: 330px;
+        background-color: var(--color-bg-dark);
+        box-shadow: -30px 30px 30px 0 rgba($color: #000000, $alpha: 0.25) inset;
+        &::after {
+            position: absolute;
+            top: 0;
+            left: 0;
+            content: '';
+            width: 110px;
+            height: 255px;
+            border-right: #957e69 1px solid;
+            border-bottom: #957e69 1px solid;
+        }
+    }
+    h1 {
+        position: absolute;
+        left: 9rem;
+        top: 12rem;
+    }
+    h2 {
+        position: absolute;
+        top: 34rem;
+        left: 18rem;
+    }
+}

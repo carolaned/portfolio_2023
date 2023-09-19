@@ -4,17 +4,17 @@
 
 :root {
     // Couleur de base
-    --color-white: #fff;
-    --color-black: #000;
+    --color-white: #f2f4f3;
+    --color-black: #0a0908;
 
     // Couleurs du projet
-    --color-primary: #758a82;
-    --color-secondary: #4d625a;
-    --color-tertiary: #363430;
-    --color-quaternary: #434240;
+    --color-primary: #a9927d;
+    --color-secondary: #5e503f;
+    --color-opacity: rgba($color: #fff, $alpha: 0.8);
 
-    --color-neutral-light: #fff;
-    --color-neutral-dark: #2e2f2f;
-
-    --color-fail: #f6511d;
+    --color-bg-primary: #22333b;
+    --color-bg-dark: #182931;
+    // --color-cube: background: rgba(255, 255, 255, 0.20),
+    // box-shadow: -30px 30px 30px 0px rgba(0, 0, 0, 0.25),
+    // backdrop-filter: blur(5.5px);
 }

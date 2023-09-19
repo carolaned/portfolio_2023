@@ -3,9 +3,10 @@
    ========================================================================== */
 
 .wrapper {
-    max-width: 1450px;
+    max-width: 1460px;
     width: calc(100% - var(--spacing-xl));
     margin: 0 auto;
+    position: relative;
 
     @media screen and (max-width: $breakpoint-xs) {
         width: calc(100% - var(--spacing-xs));
