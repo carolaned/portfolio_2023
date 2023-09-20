@@ -3,6 +3,7 @@ import Header from './components/Header';
 import Modal from './components/Modal';
 import Scrolly from './components/Scrolly';
 import Background from './components/Background';
+import Scrollx from './components/Scrollx';
 
 export default class ComponentFactory {
   constructor() {
@@ -13,6 +14,7 @@ export default class ComponentFactory {
       Modal,
       Scrolly,
       Background,
+      Scrollx,
     };
     this.init();
   }

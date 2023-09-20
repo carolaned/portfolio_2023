@@ -1,0 +1,76 @@
+{% include '_partials/_header.html' with { title: 'Contact' } %}
+<div class="contact">
+    <div class="wrapper">
+        <div class="hero">
+            <h1>Me<br />contacter</h1>
+        </div>
+        <div class="contenu">
+            <div class="infos">
+                <div class="phone">
+                    <h4>Téléphone</h4>
+                    <a href="tel:514-424-3357">514-424-3357</a>
+                </div>
+                <div class="email">
+                    <h4>Courriel</h4>
+                    <a href="mailto:carolanedupont@hotmail.com">carolanedupont@hotmail.com</a>
+                </div>
+                <div class="button">
+                    <a href="">Mon CV</a>
+                </div>
+                <ul class="reseaux">
+                    <li>
+                        <a href="https://www.linkedin.com/in/carolane-dupont-70b30a250/">
+                            <svg class="icon">
+                                <use xlink:href="#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/carolaned">
+                            <svg class="icon icon-">
+                                <use xlink:href="#icon-github"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            ><svg class="icon">
+                                <use xlink:href="#icon-instagram"></use></svg
+                        ></a>
+                    </li>
+                </ul>
+            </div>
+            <form action="">
+                <fieldset>
+                    <input
+                        class="input_element"
+                        type="text"
+                        name="name"
+                        id="name"
+                        pattern="^[a-zA-Z0]+( [a-zA-Z]+)*$"
+                        placeholder="Nom"
+                        required
+                    /><input
+                        class="input_element"
+                        type="email"
+                        name="email"
+                        id="email"
+                        placeholder="Courriel"
+                        required
+                    />
+                    <textarea
+                        class="input_element"
+                        name="message"
+                        id="message"
+                        placeholder="Message"
+                        required
+                    ></textarea>
+                </fieldset>
+                <footer class="form_footer">
+                    <button class="button">Envoyer</button>
+                </footer>
+            </form>
+        </div>
+    </div>
+</div>
+{% include '_partials/_footer.html' %}
