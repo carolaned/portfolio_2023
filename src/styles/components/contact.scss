@@ -63,14 +63,8 @@
             }
         }
 
-        .button a {
-            color: var(--color-white);
-            background-color: transparent;
-            padding: 6px;
-            border-bottom: 1px solid #fff;
-            font-size: 1.5rem;
-            font-weight: 500;
-            letter-spacing: normal;
+        .button {
+            text-transform: none;
         }
     }
 

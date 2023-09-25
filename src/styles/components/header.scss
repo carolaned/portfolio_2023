@@ -40,18 +40,19 @@ header {
         li {
             text-align: center;
             margin: 10px;
-            transition: 0.3s ease-in-out;
             width: 90px;
             a {
                 color: rgba($color: #fff, $alpha: 0.8);
-            }
-            &:hover {
                 transition: 0.3s ease-in-out;
-                letter-spacing: 0.2rem;
-                a {
-                    color: #fff;
+                &:hover {
+                    transition: 0.3s ease-in-out;
+                    letter-spacing: 0.2rem;
+                    a {
+                        color: #fff;
+                    }
                 }
             }
+
             &:last-child {
                 margin-right: 0;
             }

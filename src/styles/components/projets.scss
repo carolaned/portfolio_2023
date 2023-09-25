@@ -64,7 +64,8 @@
                     font-weight: 400;
                     color: var(--color-white);
                 }
-                .button a {
+                .button {
+                    display: inline-block;
                     font-size: 1.5rem;
                     font-weight: 500;
                     letter-spacing: normal;

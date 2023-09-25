@@ -11,3 +11,28 @@ body {
     background-color: var(--color-bg-primary);
     letter-spacing: 0.1rem;
 }
+
+.logiciels {
+    ul {
+        margin-top: 50px;
+        list-style: none;
+        font-size: 1.5rem;
+        font-weight: 300;
+        text-transform: uppercase;
+
+        li {
+            display: flex;
+            justify-content: space-between;
+            padding: 35px 50px;
+            border-top: var(--color-primary) 1px solid;
+
+            &:last-child {
+                border-bottom: var(--color-primary) 1px solid;
+            }
+
+            .langages {
+                font-size: 1.25rem;
+            }
+        }
+    }
+}

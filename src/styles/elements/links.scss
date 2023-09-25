@@ -1,6 +1,5 @@
 /* ==========================================================================
    LINKS / ELEMENTS
-   Style de base de tous les liens et bouton du site
    ========================================================================== */
 
 a {
@@ -10,4 +9,15 @@ a {
     &:hover {
         color: #fff;
     }
+}
+
+.button {
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: normal;
+    text-transform: uppercase;
+    color: var(--color-white);
+    padding: 6px;
+    border-bottom: 1px solid var(--color-white);
 }
