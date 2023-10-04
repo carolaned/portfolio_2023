@@ -5,11 +5,13 @@
 header {
     font-weight: 300;
     color: var(--color-white);
+    margin-top: 30px;
+
     .wrapper {
         display: flex;
         justify-content: space-between;
-        margin-top: 30px;
     }
+
     .logo {
         text-transform: uppercase;
         font-size: 1.5rem;
@@ -48,7 +50,6 @@ header {
                     transition: 0.3s ease-in-out;
                     letter-spacing: 0.2rem;
                     color: #fff;
-                    
                 }
             }
 
@@ -56,8 +57,32 @@ header {
                 margin-right: 0;
             }
         }
+        @media screen and (max-width: 1366px) {
+            display: none;
+        }
+
+        .nav-is-active & {
+            display: flex;
+            flex-direction: column;
+            position: fixed;
+            height: 100vh;
+            width: 100vw;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            justify-content: center;
+            align-items: center;
+            background-color: var(--color-bg-primary);
+
+            li:last-child {
+                margin: 10px;
+            }
+        }
     }
     .responsive {
         display: none;
+        @media screen and (max-width: 1366px) {
+            display: block;
+        }
     }
 }

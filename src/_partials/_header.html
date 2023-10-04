@@ -18,7 +18,7 @@
   </head>
 
   <body>
-    <header>
+    <header data-component="Header">
       <div class="wrapper">
         <a href="index.html" class="logo">Carolane Dupont</a>
         <nav>
@@ -30,8 +30,10 @@
           </ul>
           <ul class="responsive">
             <li>
-              <a href="#">
-                <svg></svg>
+              <a class="js-toggle" href="#">
+                <svg class="icon icon--xl icon--stroke">
+                    <use xlink:href="#icon-menu"></use>
+                </svg>
               </a>
             </li>
           </ul>
