@@ -1,6 +1,5 @@
 .masa {
-
-    &::after{
+    &::after {
         position: absolute;
         top: 0;
         left: 0;
@@ -11,7 +10,7 @@
         border-bottom: var(--color-primary) 1px solid;
     }
 
-    h1{
+    h1 {
         padding: 250px 150px 150px 150px;
 
         &::before {
@@ -43,7 +42,6 @@
         img {
             max-width: 860px;
             box-shadow: -30px 30px 30px 0 rgba($color: #000, $alpha: 0.25);
-            
         }
         div {
             margin-right: 80px;
@@ -69,9 +67,75 @@
         margin-top: 150px;
     }
 
+    .processus {
+        max-width: 560px;
+        margin-top: 225px;
+    }
+
     .container {
         display: flex;
         justify-content: space-between;
         margin: 120px 0;
+        position: relative;
+
+        img {
+            position: absolute;
+            bottom: -100px;
+            left: -90px;
+        }
+    }
+
+    .tab {
+        max-width: 1010px;
+        margin: 0 auto;
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+
+        .tab_menu {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+
+            .tab-button {
+                cursor: pointer;
+                width: fit-content;
+                background: none;
+                border: none;
+                text-transform: uppercase;
+                padding: 10px 20px;
+                font-size: 2rem;
+                opacity: 0.3;
+                color: var(--color-white);
+                border-bottom: 1px solid var(--color-white);
+            }
+            .is-active {
+                font-size: 3rem;
+                opacity: 1;
+            }
+        }
+
+        .tab_container {
+            position: relative;
+            width: 750px;
+            height: 470px;
+            margin: 40px 0 100px 0;
+
+            .tab_contenu {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                opacity: 0.3;
+            }
+
+            .is-active {
+                z-index: 1;
+                opacity: 1;
+                margin: 40px;
+            }
+        }
     }
 }
