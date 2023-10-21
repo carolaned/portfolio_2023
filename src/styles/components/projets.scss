@@ -4,7 +4,6 @@
 .projets {
     width: 100vw;
     height: 80vh;
-    overflow: hidden auto;
 
     &::before {
         z-index: -1;
@@ -18,11 +17,35 @@
         border-bottom: #957e69 1px solid;
     }
     .wrapper {
+        height: 100%;
+        max-width: 100vw;
+        width: 100vw;
         display: flex;
+        overflow-x: hidden;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+
+        .hero,
+        .projet {
+            scroll-snap-align: center;
+        }
+
+        &::before {
+            position: absolute;
+            bottom: 2%;
+            left: 50%;
+            content: 'Scroll >>';
+            text-transform: uppercase;
+            opacity: 25%;
+        }
     }
+
     .hero {
+        min-width: fit-content;
+        margin-left: var(--spacing-xl);
+        position: relative;
         h1 {
-            padding: 115px 250px 0 150px;
+            padding: 115px 0 0 150px;
         }
         &::before {
             z-index: -1;
@@ -53,40 +76,35 @@
         box-shadow: -30px 30px 30px 0 rgba($color: #000, $alpha: 0.25);
     }
 
-    section {
+    .projet {
         display: flex;
-        height: 80vh;
         align-items: center;
-        // align-items: center;
+        justify-content: center;
+        height: 100%;
+        min-width: 100vw;
 
-        .projet {
-            display: flex;
-            align-items: center;
-            height: fit-content;
-            min-width: 100vw;
+        .text {
+            padding-right: 100px;
 
-            .text {
-                padding-right: 100px;
-
-                p:last-of-type {
-                    max-width: 300px;
-                    margin: 50px 0;
-                    font-weight: 400;
-                    color: var(--color-white);
-                }
-                .button {
-                    display: inline-block;
-                    font-size: 1.5rem;
-                    font-weight: 500;
-                    letter-spacing: normal;
-                    text-transform: uppercase;
-                    color: var(--color-white);
-                    padding: 6px;
-                    border-bottom: 1px solid var(--color-white);
-                }
+            p:last-of-type {
+                max-width: 300px;
+                margin: 50px 0;
+                font-weight: 400;
+                color: var(--color-white);
+            }
+            .button {
+                display: inline-block;
+                font-size: 1.5rem;
+                font-weight: 500;
+                letter-spacing: normal;
+                text-transform: uppercase;
+                color: var(--color-white);
+                padding: 6px;
+                border-bottom: 1px solid var(--color-white);
             }
         }
     }
+    // }
 
     & + footer {
         position: fixed;

@@ -7,7 +7,9 @@ export default class Scrollx {
   init() {
     this.element.addEventListener('wheel', (evt) => {
       evt.preventDefault();
-      this.element.scrollLeft += evt.deltaY * 1.5;
+      this.element.scrollBy({
+        left: evt.deltaY < 0 ? -100 : 100,
+      });
     });
   }
 }
