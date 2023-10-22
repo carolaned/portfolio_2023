@@ -4,6 +4,7 @@ import Modal from './components/Modal';
 import Scrolly from './components/Scrolly';
 import Background from './components/Background';
 import Scrollx from './components/Scrollx';
+import Tabs from './components/Tabs';
 
 export default class ComponentFactory {
   constructor() {
@@ -15,6 +16,7 @@ export default class ComponentFactory {
       Scrolly,
       Background,
       Scrollx,
+      Tabs,
     };
     this.init();
   }

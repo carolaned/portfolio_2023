@@ -1,6 +1,6 @@
 {% include '_partials/_header.html' with { title: 'Planification MASA' } %}
 
-<div class="masa">
+<div class="pro masa">
     <div class="wrapper">
         <div class="hero">
             <h1>Planification<br />MASA</h1>
@@ -52,16 +52,16 @@
                 </div>
             </div>
         </div>
-        <div class="tab">
+        <div class="tab" data-component="Tabs">
             <div class="tab_menu">
-                <button class="tab-button">html</button>
-                <button class="tab-button is-active">css</button>
+                <button class="tab-button js-tab" data-tab-id="html">html</button>
+                <button class="tab-button is-active js-tab" data-tab-id="css">css</button>
             </div>
             <div class="tab_container">
-                <div class="tab_contenu">
+                <div class="tab_contenu" data-tab-content-id="html">
                     <img src="assets/images/masa_html.jpg" alt="HTML MASA" />
                 </div>
-                <div class="tab_contenu is-active">
+                <div class="tab_contenu is-active" data-tab-content-id="css">
                     <img src="assets/images/masa_css.jpg" alt="CSS MASA" />
                 </div>
             </div>

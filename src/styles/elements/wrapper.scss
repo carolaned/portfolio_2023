@@ -8,7 +8,10 @@
     margin: 0 auto;
     position: relative;
 
-    @media screen and (max-width: $breakpoint-xs) {
-        width: calc(100% - var(--spacing-xs));
+    @media screen and (max-width: $breakpoint-lg) {
+        width: calc(100% - var(--spacing-lg));
+    }
+    @media screen and (max-width: $breakpoint-sm) {
+        width: calc(100% - var(--spacing-sm));
     }
 }

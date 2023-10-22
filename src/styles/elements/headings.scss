@@ -18,6 +18,13 @@ h6 {
 h1 {
     font-size: var(--font-size-h1);
     line-height: 0.8;
+
+    @media screen and (max-width: $breakpoint-lg) {
+        font-size: 8rem;
+    }
+    @media screen and (max-width: $breakpoint-sm) {
+        font-size: 4rem;
+    }
 }
 
 h2 {
@@ -25,11 +32,23 @@ h2 {
     text-transform: uppercase;
     letter-spacing: 1.8px;
     line-height: normal;
+    @media screen and (max-width: $breakpoint-lg) {
+        font-size: 2rem;
+    }
+    @media screen and (max-width: $breakpoint-sm) {
+        font-size: 1.25rem;
+    }
 }
 
 h3 {
     font-size: var(--font-size-h3);
     letter-spacing: 4px;
+    @media screen and (max-width: $breakpoint-lg) {
+        font-size: 2rem;
+    }
+    @media screen and (max-width: $breakpoint-sm) {
+        font-size: 1.25rem;
+    }
 }
 
 h4 {
@@ -37,12 +56,30 @@ h4 {
     font-size: var(--font-size-h4);
     font-weight: 500;
     letter-spacing: normal;
+    @media screen and (max-width: $breakpoint-lg) {
+        font-size: 1.25rem;
+    }
+    @media screen and (max-width: $breakpoint-sm) {
+        font-size: 1.125rem;
+    }
 }
 
 h5 {
     font-size: var(--font-size-h5);
+    @media screen and (max-width: $breakpoint-lg) {
+        font-size: 1.125rem;
+    }
+    @media screen and (max-width: $breakpoint-sm) {
+        font-size: 1rem;
+    }
 }
 
 h6 {
     font-size: var(--font-size-h6);
+    @media screen and (max-width: $breakpoint-lg) {
+        font-size: 1.125rem;
+    }
+    @media screen and (max-width: $breakpoint-sm) {
+        font-size: 1rem;
+    }
 }

@@ -60,4 +60,52 @@
         top: 34rem;
         left: 18rem;
     }
+
+    /* ============================ Responsive ============================= */
+    @media screen and (max-width: $breakpoint-lg) {
+        h2 {
+            top: 30rem;
+            left: 14rem;
+        }
+        .cube {
+            width: 400px;
+            height: 300px;
+            &::after {
+                width: 80px;
+                height: 240px;
+            }
+        }
+    }
+
+    @media screen and (max-width: $breakpoint-sm) {
+        h1 {
+            top: 8rem;
+            left: 2.5rem;
+        }
+        h2 {
+            top: 16rem;
+            left: 2.5rem;
+        }
+        section {
+            &::before {
+                display: none;
+            }
+        }
+        .wrapper {
+            &::after {
+                bottom: 100px;
+                left: 150px;
+                width: 180px;
+                height: 125px;
+            }
+        }
+        .cube {
+            left: 70px;
+            width: 200px;
+            height: 150px;
+            &::after {
+                display: none;
+            }
+        }
+    }
 }
