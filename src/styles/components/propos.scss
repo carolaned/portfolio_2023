@@ -4,8 +4,8 @@
 .propos {
     img {
         position: absolute;
-        top: 0;
-        right: 0;
+        bottom: 0;
+        right: 180px;
         z-index: -1;
     }
 
@@ -43,13 +43,13 @@
         }
         h2 {
             position: absolute;
-            top: 46rem;
+            bottom: 100px;
             left: 45rem;
         }
 
         .cube {
             position: absolute;
-            top: 700px;
+            bottom: -100px;
             left: 450px;
             content: '';
             width: 415px;
@@ -115,6 +115,99 @@
                 text-transform: uppercase;
                 color: var(--color-white);
                 font-weight: 500;
+            }
+        }
+    }
+
+    /* ============================ Responsive ============================= */
+    @media screen and (max-width: $breakpoint-lg) {
+        img {
+            right: 100px;
+        }
+        .reseaux {
+            list-style: none;
+            position: absolute;
+            top: 35%;
+            right: 25px;
+        }
+
+        .hero {
+            h2 {
+                left: 35rem;
+            }
+
+            .cube {
+                left: 350px;
+            }
+        }
+        section {
+            .personalite {
+                &::before {
+                    left: 0;
+                }
+                &::after {
+                    width: 415px;
+                    height: 350px;
+                }
+            }
+            .logiciels,
+            .competences {
+                max-width: 600px;
+            }
+        }
+    }
+
+    /* ============================ Responsive ============================= */
+    @media screen and (max-width: $breakpoint-sm) {
+        img {
+            left: 0;
+        }
+        .reseaux {
+            top: 20%;
+            right: 15px;
+            &::before {
+                top: 110px;
+                right: -20px;
+                content: '';
+                width: 170px;
+                height: 250px;
+                background-color: rgba($color: #fff, $alpha: 0.2);
+                box-shadow: -30px 30px 30px 0 rgba($color: #000, $alpha: 0.25);
+                backdrop-filter: blur(5.5px);
+            }
+        }
+        .hero {
+            h1 {
+                height: auto;
+                padding: 80px 0 0 50px;
+            }
+            h2 {
+                left: 50px;
+                top: 220px;
+            }
+
+            .cube {
+                display: none;
+            }
+        }
+        section {
+            flex-direction: column;
+            .personalite {
+                margin: 0;
+                &::before {
+                    display: none;
+                }
+                &::after {
+                    display: none;
+                }
+            }
+            .logiciels {
+                margin: 50px auto;
+                max-width: 375px;
+            }
+            .competences {
+                max-width: 600px;
+                margin: 50px 0;
             }
         }
     }

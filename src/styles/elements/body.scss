@@ -43,5 +43,30 @@ body {
                 font-size: 1.25rem;
             }
         }
+
+        @media screen and (max-width: $breakpoint-lg) {
+            font-size: 1.25rem;
+            li {
+                &:last-child {
+                    border-bottom: var(--color-primary) 1px solid;
+                }
+                .langages {
+                    font-size: 1rem;
+                }
+            }
+        }
+        @media screen and (max-width: $breakpoint-sm) {
+            font-size: 1rem;
+            li {
+                padding: 20px 30px;
+
+                &:last-child {
+                    border-bottom: var(--color-primary) 1px solid;
+                }
+                .langages {
+                    font-size: 0.875rem;
+                }
+            }
+        }
     }
 }

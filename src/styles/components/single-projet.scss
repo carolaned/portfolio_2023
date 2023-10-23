@@ -84,8 +84,10 @@
         position: relative;
 
         img {
-            margin-top: 100px;
-            margin-left: -90px;
+            margin-top: 10px;
+            margin-left: 0;
+            // margin-top: 100px;
+            // margin-left: -90px;
             // position: absolute;
             // top: 450px;
             // left: -90px;
@@ -145,6 +147,63 @@
             }
         }
     }
+    /* ============================ Responsive ============================= */
+    @media screen and (max-width: $breakpoint-lg) {
+        &::after {
+            display: none;
+        }
+    }
+    @media screen and (max-width: $breakpoint-sm) {
+        h1 {
+            padding: 80px 0 0 50px;
+            &::before,
+            &::after {
+                display: none;
+            }
+        }
+        .infos {
+            flex-direction: column;
+            img {
+                order: 1;
+                height: auto;
+                width: 80%;
+            }
+            div {
+                order: 2;
+                margin: 50px;
+            }
+        }
+        .container {
+            flex-direction: column;
+            margin: 50px 0;
+        }
+        .logiciels {
+            margin: 50px 0;
+            width: 350px;
+        }
+        .processus {
+            margin-top: 70px;
+        }
+        .tab {
+            max-width: 350px;
+            flex-direction: column;
+            .tab_menu {
+                .tab-button {
+                    font-size: 1.5rem;
+                }
+                .is-active {
+                    font-size: 2rem;
+                }
+            }
+            .tab_container {
+                width: 350px;
+                height: 200px;
+                .is-active {
+                    margin: 40px 0;
+                }
+            }
+        }
+    }
 }
 
 /* ============================ ATYS ============================= */
@@ -155,6 +214,47 @@
         }
         &::after {
             right: -300px;
+        }
+    }
+    .palette {
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        gap: 75px;
+        margin: 100px;
+        .cercle {
+            height: 150px;
+            width: 150px;
+            border-radius: 100px;
+            box-shadow: -30px 30px 30px 0 rgba($color: #000, $alpha: 0.25);
+        }
+        .cercle1 {
+            background-color: #9aab9c;
+        }
+        .cercle2 {
+            background-color: #fff;
+        }
+        .cercle3 {
+            background-color: #171a21;
+        }
+        .cercle4 {
+            background-color: #cca9a7;
+        }
+    }
+    .images {
+        display: flex;
+        justify-content: center;
+        gap: 100px;
+        margin-bottom: 40px;
+        img {
+            margin-top: 0;
+            margin-left: 0;
+            height: auto;
+            width: 400px;
+            object-fit: contain;
+            &:last-of-type {
+                // margin
+            }
         }
     }
 }
@@ -177,9 +277,55 @@
     }
     .container {
         img {
-            position: absolute;
-            bottom: -80px;
-            left: 0;
+            position: static;
+            margin-top: 50px;
+        }
+    }
+    @media screen and (max-width: $breakpoint-lg) {
+        h1 {
+            padding: 250px 150px 0 150px;
+            position: relative;
+            width: fit-content;
+            margin-bottom: 150px;
+
+            &::before {
+                width: 300px;
+                right: -200px;
+            }
+            &::after {
+                right: -150px;
+                width: 330px;
+            }
+        }
+        .container {
+            img {
+                width: 700px;
+                height: auto;
+                bottom: -80px;
+                left: 0;
+            }
+        }
+    }
+    @media screen and (max-width: $breakpoint-sm) {
+        h1 {
+            padding: 80px 0 0 10px;
+
+            &::before {
+                width: 300px;
+                right: -200px;
+            }
+            &::after {
+                right: -150px;
+                width: 330px;
+            }
+        }
+        .container {
+            img {
+                width: 370px;
+                height: auto;
+                bottom: -250px;
+                left: 0;
+            }
         }
     }
 }
@@ -202,5 +348,19 @@
             bottom: -80px;
             left: 0;
         }
+    }
+}
+
+/* ============================ Moonlight ============================= */
+.moonlight {
+    div:has(.mockup) {
+        position: relative;
+    }
+    .mockup {
+        position: absolute;
+        bottom: 0;
+
+        height: auto;
+        width: 600px;
     }
 }
