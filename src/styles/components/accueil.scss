@@ -52,13 +52,13 @@
     }
     h1 {
         position: absolute;
-        left: 9rem;
-        top: 12rem;
+        left: 10%;
+        top: 25%;
     }
     h2 {
         position: absolute;
-        top: 34rem;
-        left: 18rem;
+        top: 70%;
+        left: 20%;
     }
 
     /* ============================ Responsive ============================= */
@@ -80,11 +80,11 @@
     @media screen and (max-width: $breakpoint-sm) {
         h1 {
             top: 8rem;
-            left: 2.5rem;
+            left: 20px;
         }
         h2 {
             top: 16rem;
-            left: 2.5rem;
+            left: 20px;
         }
         section {
             &::before {

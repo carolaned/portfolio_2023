@@ -8,7 +8,7 @@ export default class Scrollx {
   }
 
   init() {
-    this.element.addEventListener('wheel', (evt) => {
+    this.element.addEventListener('mousewheel', (evt) => {
       evt.preventDefault();
       this.element.scrollBy({
         left: evt.deltaY < 0 ? -100 : 100,

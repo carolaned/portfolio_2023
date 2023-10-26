@@ -21,9 +21,11 @@
         max-width: 100vw;
         width: 100vw;
         display: flex;
-        overflow-x: scroll;
-        scroll-snap-type: x mandatory;
         scroll-behavior: smooth;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch; /* iOS Safari */
+
         &::-webkit-scrollbar {
             display: none;
         }
@@ -95,16 +97,6 @@
                 font-weight: 400;
                 color: var(--color-white);
             }
-            .button {
-                display: inline-block;
-                font-size: 1.5rem;
-                font-weight: 500;
-                letter-spacing: normal;
-                text-transform: uppercase;
-                color: var(--color-white);
-                padding: 6px;
-                border-bottom: 1px solid var(--color-white);
-            }
         }
     }
 
@@ -164,16 +156,15 @@
             width: 100vw;
             display: flex;
             flex-direction: column;
-            overflow-x: scroll;
-            scroll-snap-type: x mandatory;
-            scroll-behavior: smooth;
+            overflow-x: hidden;
+            overflow-y: scroll;
             &::-webkit-scrollbar {
                 display: none;
             }
 
             .hero,
             .projet {
-                scroll-snap-align: center;
+                scroll-snap-align: none;
             }
 
             &::before {
@@ -183,20 +174,13 @@
         .hero {
             margin-left: var(--spacing-sm);
             h1 {
-                padding: 80px 0 0 50px;
+                padding: 80px 0 0 20px;
             }
             &::before {
-                top: 160px;
-                left: 20px;
-                width: 250px;
-                height: 150px;
+                display: none;
             }
             &::after {
-                top: 230px;
-                left: 150px;
-                content: '';
-                width: 200px;
-                height: 120px;
+                display: none;
             }
         }
         img {
@@ -219,7 +203,7 @@
             }
         }
         .projet1 {
-            margin-top: 250px;
+            margin-top: 50px;
         }
     }
 }

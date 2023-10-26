@@ -18,9 +18,15 @@ footer {
             letter-spacing: normal;
             color: var(--color-white);
             display: block;
+            position: relative;
 
             &:first-child {
                 margin-bottom: 10px;
+            }
+
+            &:hover {
+                color: var(--color-primary);
+                transition: all 0.2s ease-in-out;
             }
         }
 

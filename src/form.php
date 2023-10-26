@@ -7,6 +7,11 @@
 
     <link rel="stylesheet" href="styles/main.css" />
     <script src="scripts/main.js" defer></script>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-1YNQXNCP0Z"></script>
     <script>
@@ -32,7 +37,7 @@
 
     // Infos du courriel
     $dest = 'carolanedupont@hotmail.com';
-	$objet = "Message provenant de Portfolio";
+	  $objet = "Message provenant de Portfolio";
     $contenu = '<html>
     <head>
     <title>HTML email</title>
@@ -45,8 +50,6 @@
         </body>
         </html>
         ';
-
-    $from = "";
 
     // Convertir le html en texte
     $headers = "MIME-Version: 1.0" . "\r\n"; 

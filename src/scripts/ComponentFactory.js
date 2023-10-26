@@ -2,9 +2,9 @@ import Carousel from './components/Carousel';
 import Header from './components/Header';
 import Modal from './components/Modal';
 import Scrolly from './components/Scrolly';
-import Background from './components/Background';
 import Scrollx from './components/Scrollx';
 import Tabs from './components/Tabs';
+import Mouse from './components/Mouse';
 
 export default class ComponentFactory {
   constructor() {
@@ -14,9 +14,9 @@ export default class ComponentFactory {
       Header,
       Modal,
       Scrolly,
-      Background,
       Scrollx,
       Tabs,
+      Mouse,
     };
     this.init();
   }
