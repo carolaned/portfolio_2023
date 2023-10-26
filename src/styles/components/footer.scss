@@ -33,4 +33,20 @@ footer {
         font-size: 0.875rem;
         letter-spacing: normal;
     }
+
+    @media screen and (max-width: $breakpoint-sm) {
+        .wrapper {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .infos {
+            a {
+                font-size: 0.875rem;
+            }
+        }
+        .credit {
+            margin-top: 10px;
+        }
+    }
 }

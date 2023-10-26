@@ -20,7 +20,7 @@
         </div>
         <div class="container">
             <div>
-                <div class="description">
+                <div class="description" data-scrolly="fromBottom">
                     <h3>Description</h3>
                     <p>
                         <em>Recettes en pot</em> est un projet de design et d'intégration web, axé sur la refonte d'un
@@ -28,17 +28,20 @@
                         toute nouvelle interface regroupant plusieurs pages.
                     </p>
                 </div>
-                <img src="assets/images/masa_responsive.jpg" alt="Interface responsive" />
+                <div class="moodboard" data-scrolly="fromBottom">
+                    <h3>Moodboard</h3>
+                    <img src="assets/images/recette_moodboard.jpg" alt="Moodboard" />
+                </div>
             </div>
             <div>
-                <div class="logiciels">
+                <div class="logiciels" data-scrolly="fromBottom">
                     <h3>Logiciels et langages</h3>
                     <ul>
                         <li>Figma</li>
                         <li>Visual Studio Code</li>
                     </ul>
                 </div>
-                <div class="processus">
+                <div class="processus" data-scrolly="fromBottom">
                     <h3>Processus</h3>
                     <p>
                         Dans un premier temps, j'ai développé le design en suivant les directives de la charte graphique
@@ -48,7 +51,28 @@
                 </div>
             </div>
         </div>
-        <img class="structure" src="assets/images/recette_structure.png" alt="Structure" />
+        <div class="maquettes" data-scrolly="opacity">
+            <h3>Maquettes</h3>
+            <img class="structure" src="assets/images/recette_structure.png" alt="Structure" />
+        </div>
+        <div class="tab" data-component="Tabs" data-scrolly="opacity">
+            <div class="tab_menu">
+                <button class="tab-button js-tab" data-tab-id="html">html</button>
+                <button class="tab-button is-active js-tab" data-tab-id="css">css</button>
+            </div>
+            <div class="tab_container">
+                <div class="tab_contenu" data-tab-content-id="html">
+                    <img src="assets/images/recette_html.jpg" alt="HTML MASA" />
+                </div>
+                <div class="tab_contenu is-active" data-tab-content-id="css">
+                    <img src="assets/images/recette_css.jpg" alt="CSS MASA" />
+                </div>
+            </div>
+        </div>
+        <div class="credit" data-scrolly="fromBottom">
+            <h4>Crédits</h4>
+            <p><span>Contenu et images : </span>Recettes en pot</p>
+        </div>
     </div>
 </div>
 
