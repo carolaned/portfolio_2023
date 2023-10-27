@@ -28,8 +28,14 @@
             background-color: rgba($color: #fff, $alpha: 0.2);
             box-shadow: -30px 30px 30px 0 rgba($color: #000, $alpha: 0.25);
             backdrop-filter: blur(5.5px);
+
+            animation-name: 'opacity';
+            animation-duration: 2s;
+            -webkit-animation-name: 'opacity';
+            -webkit-animation-duration: 2s;
         }
     }
+
     .cube {
         position: absolute;
         bottom: 0;

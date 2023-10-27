@@ -27,12 +27,7 @@
     $name = $_POST['name'];
     $email = $_POST['email'];
     $message = $_POST['message'];
-    // Message ou non
-    if($message){
-        $message;
-    } else{
-        $message = "Aucun";
-    }
+  
 
 
     // Infos du courriel
@@ -59,5 +54,5 @@
     // Confirmation de l'envoie du formulaire
     $retour = mail($dest, $objet, $contenu, $headers);
     if ($retour){
-        echo "<div class='form_confirmation'><h2>Votre formulaire a été envoyé.</h2><a class='bouton' href='contact.html'>Retour</a></div>";
+        echo "<div class='form_confirmation'><h2>Votre formulaire a été envoyé.</h2><a class='button' href='contact.html'>Retour</a></div>";
     }

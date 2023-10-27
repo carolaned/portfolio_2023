@@ -176,21 +176,6 @@
             cursor: pointer;
         }
     }
-    .form_confirmation {
-        width: 100vw;
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        h2 {
-            margin-bottom: 50px;
-            text-align: center;
-        }
-        a {
-            display: inline-block;
-        }
-    }
 
     /* ============================ Responsive ============================= */
     @media screen and (max-width: $breakpoint-lg) {
@@ -232,11 +217,32 @@
         }
         .infos {
             margin: 50px 0;
+            .icon {
+                height: 1.5rem;
+                width: 1.5rem;
+            }
         }
 
         input,
         textarea {
-            width: 90%;
+            width: 100%;
         }
+    }
+}
+
+.form_confirmation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+
+    h2 {
+        margin-bottom: 50px;
+        text-align: center;
+    }
+    a {
+        display: inline-block;
     }
 }
